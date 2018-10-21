@@ -95,18 +95,18 @@ $(document).ready(function(){
 
 
 		// Checked values of Radio Buttons
-		var Q1 = $("input:radio[name='q1']:checked").val();
-		var Q2 = $("input:radio[name='q2']:checked").val();
-		var Q3 = $("input:radio[name='q3']:checked").val();
-		var Q4 = $("input:radio[name='q4']:checked").val();
-		var Q5 = $("input:radio[name='q5']:checked").val();
+		var q1 = $("input:radio[name='q1']:checked").val();
+		var q2 = $("input:radio[name='q2']:checked").val();
+		var q3 = $("input:radio[name='q3']:checked").val();
+		var q4 = $("input:radio[name='q4']:checked").val();
+		var q5 = $("input:radio[name='q5']:checked").val();
 	
 
 		// Determine the right/wrong/unanswered counts ( This count be a lot more DRY :/ )
-		if(Q1 == undefined){
+		if(q1 == undefined){
 			unansweredCount++;
 		}
-		else if(Q1 == "My Neighbor Totoro"){
+		else if(q1 == "My Neighbor Totoro"){
 			correctCount++;
 		}
 		else{
@@ -114,10 +114,10 @@ $(document).ready(function(){
 		}
 
 
-		if(Q2 == undefined){
+		if(q2 == undefined){
 			unansweredCount++;
 		}
-		else if(Q2 == "20"){
+		else if(q2 == "20"){
 			correctCount++;
 		}
 		else{
@@ -125,10 +125,10 @@ $(document).ready(function(){
 		}
 
 
-		if(Q3 == undefined){
+		if(q3 == undefined){
 			unansweredCount++;
 		}
-		else if(Q3 == "1"){
+		else if(q3 == "1"){
 			correctCount++;
 		}
 		else{
@@ -136,10 +136,10 @@ $(document).ready(function(){
 		}
 
 
-		if(Q4 == undefined){
+		if(q4 == undefined){
 			unansweredCount++;
 		}
-		else if(Q4 == "Spirited Away"){
+		else if(q4 == "Spirited Away"){
 			correctCount++;
 		}
 		else{
@@ -147,10 +147,10 @@ $(document).ready(function(){
 		}
 
 
-		if(Q5 == undefined){
+		if(q5 == undefined){
 			unansweredCount++;
 		}
-		else if(Q5 == "Dwayne Johnson"){
+		else if(q5 == "Dwayne Johnson"){
 			correctCount++;
 		}
 		else{
@@ -159,8 +159,8 @@ $(document).ready(function(){
 
 
 		// After answers are validated, display the score results
-		$("#correctanswers").html(correctCount);
-		$("#wrongWnswers").html(wrongCount);
+		$("#correctAnswers").html(correctCount);
+		$("#wrongAnswers").html(wrongCount);
 		$("#unanswered").html(unansweredCount);
 
 
